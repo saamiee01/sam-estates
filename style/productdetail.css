@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+/* header starts here */
+header{
+    margin-bottom: 20px;
+}
+.estate{
+    color: maroon;
+}
+.home-link a{
+    text-decoration: underline;
+    color: blue;
+}
+.home-link{
+    text-align: center;
+    height: 100vh;
+    font-size: 1.6rem;
+    background-color: orangered;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(/images/house6.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace; */
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .home-link p{
+    color: aqua;
+} 
+.nav{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: coral;
+    height: 50px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.nav-container{
+    width: 95%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    align-items: center;
+}
+.nav-container h3{
+    font-size: x-large;
+    text-transform: uppercase;
+}
+.links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+}
+/* header ends here */
+
+main{
+    /* padding-block: 30%; */
+    background-color: rgba(244, 106, 0, 0.09);
+    padding-block: 10px;
+    padding-bottom: 10%;
+    /* width: 80%; */
+    margin-top: 5px;
+    margin-inline: 10px;
+    height: 70vh; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 15%;
+}
+main div{
+    width: 80%;
+    margin-inline: auto;
+    padding-bottom: 30px;
+}
+main h3{
+    text-transform: uppercase;
+    color: blueviolet;
+}
+main p{
+    font-size: 1.5rem;
+    color: aqua;
+}
+@media screen and (min-width:720px){
+    .home-link{
+     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../images/house6.jpg); 
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     font-family: 'Courier New', Courier, monospace;
+     /* letter-spacing: 3px; */
+    } 
+
+ }
+
+  footer{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+ } 
+
+  
+@media screen and (max-width:900px){
+    .nav{
+        font-size: 14px;
+    }
+    .nav-container h3{
+            font-size: 16px;
+    }
+        footer{
+            height: 30px;
+            /* background-color: rgba(0, 0, 0, 0.6); */
+        }
+    }

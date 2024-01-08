@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+/* header starts here */
+header{
+    margin-bottom: 20px;
+}
+.estate{
+    color: maroon;
+}
+.home a{
+    text-decoration: underline;
+    color: purple;
+}
+/* hero starts here */
+.hero .home-text{
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        color: wheat;
+    }
+    .home-text{
+        letter-spacing: 3px;
+        font-size: 1.5rem;
+    }
+.text{
+    color: crimson;
+}
+.hero{
+    text-align: center;
+    height: 100vh;
+    background-color: orangered;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(/images/house6.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .home-link p{
+    color: darkblue;
+} 
+/* hero ends here */
+/* nav starts here */
+.nav{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: coral;
+    height: 50px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.nav-container{
+    width: 95%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    align-items: center;
+}
+.nav-container h3{
+    font-size: x-large;
+    text-transform: uppercase;
+}
+.links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+}
+/* nav ends here */
+/* main starts here */
+section:not(.section1){
+    background-color: rgba(244, 106, 0, 0.09);
+    margin-top: 30px;
+    padding-bottom: 50px;
+    margin-inline: 20px;
+    border-radius: 6px;
+}
+/* main ends here */
+/* section1 starts here */
+.section1 nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-transform: capitalize;
+ 
+}
+.section1 a{
+    text-decoration: none;
+    color: aqua;
+}
+/* section1 ends here */
+/* section2 starts here */
+.sec2{
+    padding-bottom: 30px;
+    /* height: 130vh; */
+}
+.product{
+    height: 50px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: crimson;
+}
+.card-contain{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex: 0 0 0; */
+    /* grid-template-columns: auto auto auto;
+    grid-column-gap: 10px; */
+    width: 100%;
+    /* margin-left: 1px; */
+ /* height: calc(130vh - 50px);  */
+}
+.cards{
+    margin-block: 10px;
+    background-color: white;
+    width: 32%;
+    margin-left: 1%; 
+    height: 500px;
+    text-align: center;
+    transition: all 1.2 ease;
+    border-radius: 10px;   
+}
+.cards img{
+    width: 100%;
+    height: 50%;
+}
+.cards:hover{
+    scale: 0.8;
+}
+.cards .inner{
+    padding-top: 8%;
+    /* padding-inline: 5px; */
+}
+.cards .detail{
+    color: aqua;
+}
+.cards .name{
+    display: flex;
+    justify-content: space-between;
+    /* padding-inline: 3px; */
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: brown;
+}
+.cards a{
+    text-decoration: none;
+    padding-left: 70%;
+    padding-top: 30px;
+    color: black;
+}
+.name h3{
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:500px){
+    .sec2{
+        padding-bottom: 10px;
+        /* padding-inline: 0; */
+        height: auto;
+    }
+    
+   .card-contain{
+    display: block;
+   }
+    .cards{
+        width: 95%;
+        margin-inline: auto;
+        background-color: white; 
+        border-radius: 5px;
+        margin-bottom: 30px;
+        height: 400px;
+        text-align: center;
+        border-radius: 5px;   
+    }
+    section{
+        margin-inline: 10px;
+    }
+}
+/* section2 ends here */
+/* section3 starts here */
+.section3 a{
+    padding-left: 10%;
+    text-decoration: none;
+}
+.section3 .link-next{
+    /* width: 80px; */
+    margin-left: 20%;
+    /* margin-inline: auto; */
+}
+.link-next .link-href:hover{
+    background-color: blue;
+    opacity: 0.4;
+    padding-right: 0;
+}
+.section3{
+    padding-top: 10px;
+}
+/* section3 ends here */
+/* footer starts here */
+footer{
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.cards a:hover{
+    /* background-color: aqua; */
+    color: blue;
+    padding-left: 0;
+    padding-top: 0;
+    scale: 0;
+    text-decoration: underline;
+    /* padding-left: 70%; */
+    padding-top: 30px;
+}
+/* footer ends here */
+
+
+@media screen and (max-width:900px){
+    .nav{
+        font-size: 14px;
+    }
+    /* .hero .hero-content a{
+        color: white;
+    } */
+    .nav-container h3{
+        font-size: 16px;
+    }
+    footer{
+        height: 50px;
+        /* background-color: rgba(0, 0, 0, 0.6); */
+    }
+    /* .img-container{
+        position: relative;
+        width: 70%;
+        height: 70%;
+        margin-inline: auto;
+        flex: 0 0 40px;
+    } */
+    /* .sec1{
+        padding-inline: 5%;
+        /* height: 100vh; */
+        /* background-color: rgba(244, 106, 0, 0.538); */ 
+        /* font-size: 12px; */
+    /* } */
+    /* .sec1 h2{
+        margin-bottom: 5px;
+        padding-top: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgb(85, 0, 255);
+    } */
+    /* .service{
+        display: block;
+        text-transform: capitalize;
+    }
+    .item{
+        margin: 10px;
+        border-left: 20px solid darkcyan;
+        padding: 20px;
+    } */
+    }
+
+    @media screen and (min-width:720px){
+        .hero{
+         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../images/house6.jpg); 
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+         font-family: 'Courier New', Courier, monospace;
+         /* letter-spacing: 3px; */
+        } 
+     }

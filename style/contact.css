@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+/* header starts here */
+header{
+    margin-bottom: 20px;
+}
+.estate{
+    color: maroon;
+}
+.home-link a{
+    text-decoration: underline;
+    color: blue;
+}
+.home-link{
+    text-align: center;
+    height: 100vh;
+    font-size: 1.6rem;
+    background-color: orangered;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(/images/house6.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace; */
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .home-link p{
+    color: aqua;
+} 
+.nav{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: coral;
+    height: 50px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+.nav-container{
+    width: 95%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    align-items: center;
+}
+.nav-container h3{
+    font-size: x-large;
+    text-transform: uppercase;
+}
+.links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+}
+/* header ends here */
+
+/* main starts here */
+main{
+    background-color: rgba(244, 106, 0, 0.09);
+    padding-block: 10px;
+    margin-inline: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+main h3{
+    /* width: 80%; */
+    display: block;
+    color: blueviolet;
+    /* margin-top: 10px; */
+    margin-left: 40%; 
+    margin-block: 30px;
+    text-transform: uppercase;
+}
+
+.form-contain{
+    /* width: 80%; */
+    padding-inline: 20%;
+    
+}
+.forms{
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgba(248, 105, 255, 0.3);
+    margin-top: 10px;
+   padding-left: 10px;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: aqua;
+    font-size: 1.3rem;
+}
+.form-inner{
+    padding-bottom: 10px;
+}
+/* main ends here */
+
+
+@media screen and (min-width:720px){
+    .home-link{
+     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../images/house6.jpg); 
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     font-family: 'Courier New', Courier, monospace;
+     /* letter-spacing: 3px; */
+    } 
+
+ }
+ 
+@media screen and (max-width:900px){
+    .nav{
+        font-size: 14px;
+    }
+    .nav-container h3{
+            font-size: 16px;
+    }
+    .form-contain{
+            /* width: 80%; */
+            padding-inline: 10%;
+            
+        }
+    .forms{
+            border-radius: 5px;
+            margin-left: 5px;
+            background-color: rgba(248, 105, 255, 0.3);
+           padding-left: 5px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            /* color: aqua; */
+            font-size: 10px;
+        }
+        footer{
+            height: 30px;
+            /* background-color: rgba(0, 0, 0, 0.6); */
+        }
+    }
+    /* footer starts here */
+    footer{
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    /* footer ends here */
+    
+
+    .btn:hover{
+        background-color: blueviolet;
+        opacity: 0.5;
+        /* font-style: italic; */
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
